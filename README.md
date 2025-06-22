@@ -1,7 +1,8 @@
-# 🤖 Discord Admin Tools Bot by ItsKyy Dev
+# 🤖 Bot Discord Admin Tools Bot by ItsKyyDev
 
 Bot Discord ini saya kembangkan dengan bantuan chatgpt dan beberapa source lain :v
-Anda bebas menggunakan dan mengembangkan ini
+
+Anda bebas menggunakan dan mengembangkan bot ini
 
 
 ## 🚀 Fitur Utama
