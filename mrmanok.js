@@ -1,4 +1,3 @@
-// ✅ Import Library
 const fs = require('fs');
 const { Client, GatewayIntentBits, Partials, PermissionsBitField, ActivityType } = require('discord.js');
 const client = new Client({
@@ -14,11 +13,11 @@ const client = new Client({
 const PREFIX = '.';
 const CONFIG_FILE = 'config.json';
 
-// ✅ Konfigurasi akses, yall can change this id with ur id and role id
+// Konfigurasi akses, hanya id yang ada di list yang dapat mengakses command yang terdapat di bot
 const allowedUserIDs = ['ur id'];
 const allowedRoleIDs = ['ur role id'];
 
-// ✅ Load config
+// Load 
 let config = {};
 if (fs.existsSync(CONFIG_FILE)) {
     config = JSON.parse(fs.readFileSync(CONFIG_FILE));
@@ -27,7 +26,7 @@ if (fs.existsSync(CONFIG_FILE)) {
     fs.writeFileSync(CONFIG_FILE, JSON.stringify(config, null, 2));
 }
 
-// cek otorisas
+// cek apakah user memiliki otoritas 
 function isAuthorized(member) {
     if (allowedUserIDs.includes(member.id)) return true;
     return member.roles.cache.some(role => allowedRoleIDs.includes(role.id));
@@ -49,7 +48,7 @@ client.on('messageCreate', async (message) => {
         return message.reply('🚫 Kamu tidak memiliki izin untuk menggunakan perintah ini.');
     }
 
-    // .setnick @user NamaBaru
+    // .setnick @user newname
     if (command === 'setnick') {
         const target = message.mentions.members.first();
         const newNick = args.slice(1).join(' ');
@@ -173,7 +172,7 @@ client.on('messageCreate', async (message) => {
         }
     }
 
-    // .menu yall can change this shit
+    // .menu / kalian bisa mengubahnya untuk menyesuaikan dengan bot kalian ndog
     if (command === 'menu') {
         message.reply(`
 📘 *Admin Commands:*
@@ -192,7 +191,7 @@ Chat <@fill with ur id> jika ingin memiliki role <@&fill with ur role id>.
     }
 });
 
-// when member join
+// ketika ada ndog nya member join
 client.on('guildMemberAdd', async (member) => {
     const guildId = member.guild.id;
 
@@ -205,7 +204,7 @@ client.on('guildMemberAdd', async (member) => {
         }
     }
 
-    // Auto role
+    // Auto role saat join ke server
     const autoRoleId = config.autorole[guildId];
     if (autoRoleId) {
         const role = member.guild.roles.cache.get(autoRoleId);
