@@ -16,7 +16,7 @@ Anda bebas menggunakan, memodifikasi, dan mengembangkan bot ini sesuai kebutuhan
 | `.setautorole @role` | Memberikan role otomatis saat member join. |
 | `.clear` | Menghapus semua pesan dalam channel. |
 | `.delete (reply)` | Menghapus pesan yang di-reply. |
-| `.setstatus <tipe> | <pesan>` | Mengatur status bot (Playing, Watching, Listening). |
+| `.setstatus <tipe> <pesan>` | Mengatur status bot (Playing, Watching, Listening). |
 | `.menu` | Menampilkan daftar perintah admin. |
 
 ---
@@ -36,3 +36,7 @@ cd admin-discord-bot
 npm install
 node index.js
 
+**## 📫 Kontak
+Nama: ItsKyyDev
+📧 Email: itskyy.dev@gmail.com
+🌐 GitHub: https://github.com/ItsKyyDev**
