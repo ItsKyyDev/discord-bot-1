@@ -1,23 +1,38 @@
 # 🤖 Discord Admin Tools Bot by ItsKyyDev
 
-Bot Discord ini saya kembangkan dengan bantuan chatgpt dan beberapa source lain :v
+Bot Discord ini dikembangkan oleh **ItsKyyDev** dengan bantuan ChatGPT dan referensi open source lainnya.  
+Anda bebas menggunakan, memodifikasi, dan mengembangkan bot ini sesuai kebutuhan Anda.
 
-Anda bebas menggunakan dan mengembangkan bot ini
-
+---
 
 ## 🚀 Fitur Utama
 
-- `.setnick @user NamaBaru` → Ganti nickname user
-- `.addrole @user @role` → Tambahkan role ke user
-- `.removerole @user @role` → Hapus role dari user
-- `.setwelcome #channel` → Atur channel sambutan
-- `.setautorole @role` → Beri role otomatis ke member baru
-- `.clear` → Reset channel dan hapus semua pesan
-- `.delete` (reply) → Hapus pesan yang direply
-- `.setstatus <tipe> | <pesan>` → Atur status bot
-- `.menu` → Lihat daftar perintah admin
-
-> 🔐 **Hanya user dan role tertentu yang bisa menjalankan perintah ini.**  
-> Sesuaikan ID user dan role di bagian konfigurasi (`allowedUserIDs` & `allowedRoleIDs`).
+| Perintah | Deskripsi |
+|----------|-----------|
+| `.setnick @user NamaBaru` | Mengganti nickname user. |
+| `.addrole @user @role` | Menambahkan role ke user. |
+| `.removerole @user @role` | Menghapus role dari user. |
+| `.setwelcome #channel` | Mengatur channel sambutan untuk member baru. |
+| `.setautorole @role` | Memberikan role otomatis saat member join. |
+| `.clear` | Menghapus semua pesan dalam channel. |
+| `.delete (reply)` | Menghapus pesan yang di-reply. |
+| `.setstatus <tipe> | <pesan>` | Mengatur status bot (Playing, Watching, Listening). |
+| `.menu` | Menampilkan daftar perintah admin. |
 
 ---
+
+## 🔐 Hak Akses Perintah
+
+Hanya **user tertentu** dan **role tertentu** yang diizinkan menjalankan perintah admin.  
+Silakan sesuaikan `allowedUserIDs` dan `allowedRoleIDs` di file konfigurasi bot.
+
+---
+
+## 🛠️ Cara Instalasi & Menjalankan
+
+```bash
+git clone https://github.com/ItsKyyDev/admin-discord-bot.git
+cd admin-discord-bot
+npm install
+node index.js
+
