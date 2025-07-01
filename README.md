@@ -28,11 +28,10 @@ Silakan sesuaikan `allowedUserIDs` dan `allowedRoleIDs` di file konfigurasi bot.
 
 ---
 
-## 📫 Kontak
-Nama: ItsKyyDev.
-📧 Email: itskyy.dev@gmail.com
-
-🌐 GitHub: https://github.com/ItsKyyDev
+## 📫 Kontak  
+**Nama:** ItsKyyDev  
+📧 **Email:** [itskyy.dev@gmail.com](mailto:itskyy.dev@gmail.com)  
+🌐 **GitHub:** [https://github.com/ItsKyyDev](https://github.com/ItsKyyDev)
 
 ---
 
