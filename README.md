@@ -28,6 +28,13 @@ Silakan sesuaikan `allowedUserIDs` dan `allowedRoleIDs` di file konfigurasi bot.
 
 ---
 
+## 📫 Kontak
+Nama: ItsKyyDev
+📧 Email: itskyy.dev@gmail.com
+🌐 GitHub: https://github.com/ItsKyyDev
+
+---
+
 ## 🛠️ Cara Instalasi & Menjalankan
 
 ```bash
@@ -35,8 +42,3 @@ git clone https://github.com/ItsKyyDev/admin-discord-bot.git
 cd admin-discord-bot
 npm install
 node index.js
-
-**## 📫 Kontak
-Nama: ItsKyyDev
-📧 Email: itskyy.dev@gmail.com
-🌐 GitHub: https://github.com/ItsKyyDev**
